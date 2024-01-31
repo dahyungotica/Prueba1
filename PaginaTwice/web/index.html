@@ -1,0 +1,172 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static '/css/styles.css' %}">
+
+    <title>FanPage Twice</title>
+</head>
+<body>
+
+    <!-- ========================================== -->
+    <!-- ENCABEZADO -->
+    <!-- ========================================== -->
+    <header class="container-fluid bg-color d-flex justify-content-center">
+        <p class="btn text-light mb-0 p-2 fs-6">!Bienvenidos a Stay u Twice!</p>
+    </header>
+
+<!-- BARRA DE NAVEGACIÓN -->    
+<nav class="navbar navbar-expand-lg bg-body-tertiary p-3" id="menu">
+
+  <!-- BOTON DE TWICE con imagen -->
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon">
+        <img src="{% static '/images/TwiceMenu.png'%}" alt="Menú de Twice">
+    </span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="btn-volver nav-link" href="/login/">Cerrar Sesión</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="productos.html">Market</a>
+          </li>
+      </ul>
+  </div>
+  
+  <!-- BOTON DE TWICE-->
+  <button id="twiceButton" class="btn bg-color text-light btn-lg" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Twice
+  </button>
+
+</nav>
+
+    <!-- ========================================== -->
+    <!-- CARRUSEL DE IMAGENES -->
+    <!-- ========================================== -->
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img src="{% static 'images/Twice.jpg'%}" class="d-block w-100" alt="Twice">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="{% static 'images/Jihyo.jpg'%}" class="d-block w-100" alt="Jihyo">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="{% static 'images/Nayeon.jpg'%}" class="d-block w-100" alt="Nayeon">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="{% static 'images/Tzuyu.jpg'%}" class="d-block w-100" alt="Tzuyu">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="{% static 'images/Sana.jpg'%}" class="d-block w-100" alt="Sana">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="{% static 'images/Mina.jpg'%}" class="d-block w-100" alt="Mina">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="{% static 'images/Momo.jpg'%}" class="d-block w-100" alt="Momo">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="{% static 'images/Jeongyeon.jpg'%}" class="d-block w-100" alt="Jeongyeon">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="{% static 'images/Chaeyoung.jpg'%}" class="d-block w-100" alt="Chaeyoung">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="{% static 'images/Dahyun.jpg'%}" class="d-block w-100" alt="Dahyun">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- ========================================== -->
+    <!-- INTRO -->
+    <!-- ========================================== -->
+    <section class="w-50 mx-auto text-center pt-5" id="intro">
+      <h1 class="p-3 fs-2 border-top border-3">Stay u Twice es una pagina creada por y para <span class="text-primary">Onces</span>.</h1>
+      <p class="p-3 fs-4">Esperamos sea de tu agrado el contenido y te logres incorporar a nuestra comunidad de <span class="text-primary">Onces</span>.</p>
+    </section>
+    <!-- ========================================== -->
+    <!-- SERVICIOS -->
+    <!-- ========================================== -->
+    <section class="container-fluid">
+      <div class="row w-75 mx-auto servicio-fila">
+        <div class="col-lg-6 col-md-12 col-md-12 d-flex my-5 icono-wrap">
+          <img src="{% static 'images/Twice-Park-Jin-young.jpg'%}" alt="TwiceGroup" width="180" height="180">
+          <a href="informacion.html" style="text-decoration: none; color: inherit;">
+            <div>
+                <h3 class="fs-5 mt-4 px-4 pb-1">Información de Twice.</h3>
+                <p class="px-4">Conoce más de este grupo surcoreano de <span class="text-primary">K-pop</span> y cómo logró formarse.</p>
+            </div>
+        </a>
+        
+        </div>
+        <div class="col-lg-6 col-md-12 col-md-12 d-flex my-5 icono-wrap">
+          <img src="{% static 'images/DiscoReadyToBe.jpg'%}" alt="TwiceGroup" width="180" height="180">
+          <a href="discography.html" style="text-decoration: none; color: inherit;">
+          <div>
+            <h3 class="fs-5 mt-4 px-4 pb-1">Discografia de Twice.</h3>
+            <p class="px-4">Escucha todas las canciones de <stan class="text-primary">Twice</stan>, incluyendo las mas actuales.</p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-md-12 d-flex my-5 icono-wrap">
+          <img src="{% static 'images/Galeria.jpg'%}" alt="TwiceGroup" width="180" height="180">
+          <div>
+            
+            <a href="galery.html" style="text-decoration: none; color: inherit;">
+              <div>
+                  <h3 class="fs-5 mt-4 px-4 pb-1">Galeria de Twice.</h3>
+                  <p class="px-4">Quiza necesites un nuevo fondo de pantalla luego de ver la <span class="text-primary">galeria</span> de Twice.</p>
+              </div>
+          </a><p class="px-4">Quiza necesites un nuevo fondo de  <stan class="text-primary"></stan> </p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-md-12 d-flex my-5 icono-wrap">
+          <img src="{% static 'images/FanArt.jpg'%}" alt="TwiceGroup" width="180" height="180">
+          <a href="fanArts.html" style="text-decoration: none; color: inherit;">
+          <div>
+            <h3 class="fs-5 mt-4 px-4 pb-1">Fan-Arts de Twice.</h3>
+            <p class="px-4">Deleitate con la <stan class="text-primary">creatividad</stan> que tiene once para demostrar su amor a Twice.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========================================== -->
+    <!-- ACERCA DE NOSOTROS -->
+    <!-- ========================================== -->
+    <section>
+      <div class="w-75 m-auto text-center" id="equipo">
+        <h1 class="mb-3 fs-2">Grandes <span class="text-primary">fans</span>, grandes <span class="text-primary">resultados</span>.</h1>
+        <p class="fs-4">¡Cuenta con nuestra gran comunidad los 365 dias del año!</p>
+        <p class="fs-4" id="typewriter"></p>
+      </div>
+      <div class="mt-5 text-center">
+        <img class="img-fluid pb-5" src="{% static 'images/equipoTwice.jpg'%}" alt="equipo">
+      </div>
+    </section>
+    <!-- ========================================== -->
+    <!-- FORMULARIO -->
+    <!-- ========================================== -->
+    <footer>
+      <div>
+
+      </div>
+    </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+      <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+      <script src="{% static '/main.js' %}"></script>
+</body>
+</html>

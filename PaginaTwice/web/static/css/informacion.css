@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #dd74a9;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+#menu li > a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #551a8b;
+}
+
+#menu form > button {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+header {
+  background-color: #dd74a9;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+section {
+  margin: 20px;
+  padding: relative;
+}
+
+h2 {
+  color: #dd74a9;
+  text-align: center;
+}
+
+.card {
+  text-align: center;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px;
+  background-color: transparent;
+}
+
+.card img {
+  border-radius: 8px;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.album {
+  text-align: center;
+  margin: 20px;
+}
+
+.album img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+footer {
+  padding: 10px;
+  background-color: #dd74a9;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.carousel-inner {
+  display: flex;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  #intro,
+  #equipo {
+    width: 90% !important;
+  }
+  .servicio-fila {
+    width: 100% !important;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .icono.wrap {
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+}
+
+.bg-color {
+  background-color: #dd74a9;
+}
+
+.bg-pink {
+  color: #dd74a9;
+}

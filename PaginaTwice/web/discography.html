@@ -1,0 +1,143 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static '/css/galery.css' %}" />
+    <link rel="stylesheet" href="{% static '/css/styles.css' %}" />
+    <title>Discografia de Twice</title>
+  </head>
+  <body>
+    <header>
+      <p class="text-light mb-0 p-2 fs-6">Discografia de Twice</p>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-3" id="menu">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="btn-volver" href="/login/index.html/">Inicio</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <h1>DISCOGRAFIA DE TWICE</h1>
+    <section id="integrantes">
+      <div class="card">
+        <img
+          src="{% static 'images/Twicetagram (1Album).png'%}"
+          alt="Twicetagram"
+        />
+        <h2>"Twicetagram" (2017)</h2>
+      </div>
+      <div class="card">
+        <img
+          src="{% static 'images/Merry&Happy (2Album).jpg'%}"
+          alt="Merry & Happy"
+        />
+        <h2>"Merry & Happy" (2017)</h2>
+      </div>
+      <div class="card">
+        <img
+          src="{% static 'images/WhatIsLove (3Album).jpg'%}"
+          alt="What is Love?"
+        />
+        <h2>"What is Love?" (2018)</h2>
+      </div>
+      <div class="card">
+        <img
+          src="{% static 'images/SummerNights (4Album).jpg'%}"
+          alt="Summer Nights"
+        />
+        <h2>"Summer Nights" (2018)</h2>
+      </div>
+      <div class="card">
+        <img
+          src="{% static 'images/YesOrYes (5Album).png'%}"
+          alt="Yes or Yes"
+        />
+        <h2>"Yes or Yes" (2018)</h2>
+      </div>
+      <div class="card">
+        <img src="{% static 'images/FancyYou (6Album).png'%}" alt="Fancy You" />
+        <h2>"Fancy You" (2019)</h2>
+      </div>
+      <div class="card">
+        <img
+          src="{% static 'images/FeelSpecial (7Album).png'%}"
+          alt="Feel Special"
+        />
+        <h2>"Feel Special" (2019)</h2>
+      </div>
+      <div class="card">
+        <img
+          src="{% static 'images/More&More (8Album).jpeg'%}"
+          alt="More & More"
+        />
+        <h2>"More & More" (2020)</h2>
+      </div>
+      <div class="card">
+        <img
+          src="{% static 'images/EyesWideOpen (9Album).png'%}"
+          alt="Eyes Wide Open"
+        />
+        <h2>"Eyes Wide Open" (2020)</h2>
+      </div>
+      <div class="card">
+        <img
+          src="{% static 'images/TasteOfLove (10Album).png'%}"
+          alt="Taste of Love"
+        />
+        <h2>"Taste of Love" (2021)</h2>
+      </div>
+      <div class="card">
+        <img
+          src="{% static 'images/FormulaOfLove (11Album).png'%}"
+          alt="Formula of Love: <br>O+T =< 3"
+        />
+        <h2>"Formula of Love: <br />O+T =< 3" (2021)</h2>
+      </div>
+      <div class="card">
+        <img src="{% static 'images/Twice4 (12Album).jpg'%}" alt="Twice4" />
+        <h2>"Twice4" (2022)</h2>
+      </div>
+      <div class="card">
+        <img
+          src="{% static 'images/Celebrate (13Album).png'%}"
+          alt="Celebrate"
+        />
+        <h2>"Celebrate" (2022)</h2>
+      </div>
+      <div class="card">
+        <img
+          src="{% static 'images/Between1&2 (14Album).png'%}"
+          alt="Between 1&2"
+        />
+        <h2>"Between 1&2" (2022)</h2>
+      </div>
+      <div class="card">
+        <img
+          src="{% static 'images/ReadyToBe (15Album).jpg'%}"
+          alt="Ready to be"
+        />
+        <h2>"Ready to be" (2023)</h2>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; 2024 FanPage Twice</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static '/css/informacion.css' %}" />
+    <link rel="stylesheet" href="{% static '/css/styles.css' %}" />
+    <title>Información de Twice</title>
+  </head>
+  <body>
+    <header class="container-fluid bg-color d-flex justify-content-center">
+      <p class="text-light mb-0 p-2 fs-6">
+        Información de las integrantes de Twice
+      </p>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-3" id="menu">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="btn-volver" href="/login/index.html/">Inicio</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="integrantes">
+      <h2>Integrantes</h2>
+      <div class="card">
+        <img src="{% static 'images/Nayeon.jpg'%}" alt="Nayeon" />
+        <h2>Nayeon (Im Na-yeon)</h2>
+        <h4>
+          <p>Posición: Vocalista principal</p>
+          <p>Fecha de nacimiento: 22 de septiembre de 1995</p>
+          <p>
+            Es la mayor del grupo y ha participado en varios programas de
+            televisión antes de unirse a Twice.
+          </p>
+        </h4>
+      </div>
+      <div class="card">
+        <img src="{% static 'images/Jeongyeon.jpg'%}" alt="Jeongyeon" />
+        <h2>Jeongyeon (Yoo Jeong-yeon)</h2>
+        <h4>
+          <p>Posición: Vocalista principal</p>
+          <p>Fecha de nacimiento: 1 de noviembre de 1996</p>
+          <p>Curiosidades: Es la hermana menor de la actriz Gong Seung-yeon.</p>
+          <p>
+            Antes de unirse a Twice, participó en programas de competición
+            musical.
+          </p>
+        </h4>
+      </div>
+      <div class="card">
+        <img src="{% static 'images/Chaeyoung.jpg'%}" alt="Chaeyoung" />
+        <h2>Chaeyoung (Son Chae-young)</h2>
+        <h4>
+          <p>Posición: Rapera principal y vocalista</p>
+          <p>Fecha de nacimiento: 23 de abril de 1999</p>
+          <p>
+            Es la principal letrista del grupo y ha participado en la
+            composición de algunas de sus canciones.
+          </p>
+        </h4>
+      </div>
+      <div class="card">
+        <img src="{% static 'images/Dahyun.jpg'%}" alt="Dahyun" />
+        <h2>Dahyun (Kim Da-hyun)</h2>
+        <h4>
+          <p>Posición: Rapera principal y vocalista</p>
+          <p>Fecha de nacimiento: 28 de mayo de 1998</p>
+          <p>
+            Es conocida por su energía positiva y su sonrisa brillante. Antes de
+            debutar con Twice, participó en el programa "Sixteen".
+          </p>
+        </h4>
+      </div>
+      <div class="card">
+        <img src="{% static 'images/Jihyo.jpg'%}" alt="Jihyo" />
+        <h2>Jihyo (Park Ji-hyo)</h2>
+        <h4>
+          <p>Posición: Líder y vocalista principal</p>
+          <p>Fecha de nacimiento: 1 de febrero de 1997</p>
+          <p>
+            Fue la ganadora del programa "Sixteen", lo que le dio el puesto de
+            líder en Twice.
+          </p>
+        </h4>
+      </div>
+      <div class="card">
+        <img src="{% static 'images/Mina.jpg'%}" alt="Mina" />
+        <h2>Mina (Myoui Mina)</h2>
+        <h4>
+          <p>Posición: Bailarina principal y vocalista</p>
+          <p>Fecha de nacimiento: 24 de marzo de 1997</p>
+          <p>
+            Nació en Texas, EE. UU., y es de nacionalidad
+            japonesa-estadounidense. Antes de unirse a Twice, participó en el
+            programa "Sixteen".
+          </p>
+        </h4>
+      </div>
+      <div class="card">
+        <img src="{% static 'images/Momo.jpg'%}" alt="Momo" />
+        <h2>Momo (Hirai Momo)</h2>
+        <h4>
+          <p>Posición: Bailarina principal y rapera líder</p>
+          <p>Fecha de nacimiento: 9 de noviembre de 1996</p>
+          <p>
+            Es japonesa y antes de unirse a Twice, fue parte del grupo de baile
+            "Momo X" en Japón.
+          </p>
+        </h4>
+      </div>
+      <div class="card">
+        <img src="{% static 'images/Sana.jpg'%}" alt="Sana" />
+        <h2>Sana (Minatozaki Sana)</h2>
+        <h4>
+          <p>Posición: Vocalista</p>
+          <p>Fecha de nacimiento: 29 de diciembre de 1996</p>
+          <p>
+            También es japonesa. Antes de unirse a Twice, participó en el
+            concurso de talentos "Sixteen", que fue el programa de selección
+            para el grupo.
+          </p>
+        </h4>
+      </div>
+      <div class="card">
+        <img src="{% static 'images/Tzuyu.jpg'%}" alt="Tzuyu" />
+        <h2>Tzuyu (Chou Tzuyu)</h2>
+        <h4>
+          <p>Posición: Maknae (miembro más joven), vocalista y visual</p>
+          <p>Fecha de nacimiento: 14 de junio de 1999</p>
+          <p>
+            Es de Taiwán y es conocida por su belleza. Antes de unirse a Twice,
+            fue descubierta por un agente de talentos en Taiwán.
+          </p>
+        </h4>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; 2024 FanPage Twice</p>
+    </footer>
+  </body>
+</html>
